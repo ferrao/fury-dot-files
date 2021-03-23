@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# get info from cpu
+
+speed=$(lscpu | grep CPU.MHz | awk 'BEGIN{RS=";"}{printf "%.1f\n", $3;}')
+echo "@ $speed MHz"

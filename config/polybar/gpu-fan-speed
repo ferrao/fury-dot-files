@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# get info from sensors
+
+MAX_SPEED=3500
+
+speed=$(sensors | grep fan1 | awk '{print $2; exit}')
+
+if [ "$speed" != "" ]; then
+    speed_round=$(echo "scale=0;$speed*100/3500" | bc -l )
+    echo "$speed_round%"
+else
+   echo ""
+fi

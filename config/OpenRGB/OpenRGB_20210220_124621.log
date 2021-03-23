@@ -1,0 +1,9 @@
+[Detection]: Detection started
+[Detection]: Detecting I2C/SMBus busses
+[Detection]: Detecting I2C/SMBus devices
+[Detection]: Detecting HID devices
+[Detection]: Registering RGB controller: AMD Wraith Prism
+[Detection]: Registering RGB controller: ASUS Aura Motherboard
+[Detection]: Detecting other devices
+[Detection]: Detection completed
+[Plugins]: Loading plugins
