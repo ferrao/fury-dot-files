@@ -31,8 +31,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-mix-format'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'w0rp/ale'
-
 
 " file browser
 Plug 'scrooloose/nerdtree'
@@ -88,7 +86,13 @@ set backspace=indent,eol,start
 set relativenumber " makes file navigation so easy...
 set undofile
 set autoread
+
+" clipboard
 set clipboard=unnamed
+" visual selection to clipboard
+vnoremap <C-c> "*y  
+" paste clipboard in insert mode
+vnoremap <C-v> "*p
 
 " python provider
 set pyxversion=3
@@ -146,9 +150,6 @@ let g:user_emmet_leader_key='<C-e>' " leader + comma(,) expands emmet
 let g:user_emmet_settings = { 'javascript.jsx' : { 'extends' : 'jsx' } }
 
 " linter
-"let g:ale_linters = {'javascript': ['eslint'], 'javascript.jsx': ['eslint'], 'json': ['eslint'] }
-"let g:ale_sign_error = '●'
-"let g:ale_sign_warning = '.'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
