@@ -2,5 +2,11 @@
   "prettier.requireConfig": true,
   "eslint.run": "onSave",
   "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "javascript.suggestionActions.enabled": false
 }
