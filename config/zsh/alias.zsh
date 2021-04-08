@@ -3,7 +3,7 @@
 #
 
 alias ls="ls --color=auto"
-alias more="less"
+alias tree="tree -C"
 alias clear="clear"
 alias claer="clear"
 alias open="xdg-open"
